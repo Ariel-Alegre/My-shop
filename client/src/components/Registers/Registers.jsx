@@ -1,4 +1,4 @@
-import { LockClosedIcon } from '@heroicons/react/20/solid'
+/* import { LockClosedIcon } from '@heroicons/react/20/solid'
 
 export default function Registers() {
   return (
@@ -90,4 +90,4 @@ export default function Registers() {
       </div>
 
   )
-}
+} */
