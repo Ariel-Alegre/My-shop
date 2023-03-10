@@ -23,11 +23,11 @@ module.exports = {
       },
       password: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       confirmPassword: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
     });
   },
