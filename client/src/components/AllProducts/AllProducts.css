@@ -1,3 +1,14 @@
 .card {
   box-shadow: 0px 0px 1px black;
 }
+.order {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#price {
+  margin-right: 10px;
+}
+
+  
+
