@@ -8,7 +8,7 @@ module.exports = {
                 ? res.status(200).send(products)
                 : res.status(404).send({ msg: "No existe los productos" })
         } catch (error) {
-            console.log(error);
+            console.log("[Error - allProducts - GET" ,error);
         }
     }
 }

@@ -4,7 +4,7 @@ module.exports= {
     userRegister: async (req, res) => {
           const { name, lastName, email,password, confirmPassword } = req.body
           try {
-            if (!name || !lastName || !email || !password || !confirmPassword ) {
+           /*  if (!name || !lastName || !email || !password || !confirmPassword ) {
                 res.status(404).json({
                     message: "Complete los datos correctamente"
                 });
@@ -27,7 +27,7 @@ module.exports= {
                 })
 
             
-             res.send(users)
+             res.send(users) */
 
             
           } catch (error) {

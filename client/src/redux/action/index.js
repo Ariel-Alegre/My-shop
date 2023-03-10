@@ -1,9 +1,9 @@
 import axios from "axios"
-
+const { REACT_APP_SERVER } = process.env
 
 export const allProducts = () => {
     return async (dispatch) => {
-        const res = await axios.get('http://localhost:1998/products')
+        const res = await axios.get(`${REACT_APP_SERVER}/products`)
         const data = await res.data
         return dispatch({
             type: "ALL_PRODUCTS",
@@ -16,7 +16,7 @@ export const allProducts = () => {
 
 export const oneProducts = (id) => {
     return async (dispatch) => {
-        const res = await axios.get(`http://localhost:1998/products/${id}`);
+        const res = await axios.get(`${REACT_APP_SERVER}/products/${id}`);
         const data= await res.data
 
         return dispatch({
