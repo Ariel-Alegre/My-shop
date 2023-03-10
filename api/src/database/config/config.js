@@ -1,6 +1,6 @@
 require('dotenv').config()
- 
- module.exports = {
+
+module.exports = {
   development: {
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -9,27 +9,18 @@ require('dotenv').config()
     port: process.env.DB_PORT,
     dialect: "postgres",
     define: {
-       timestamps: false
+      timestamps: false
     }
   },
-  test: {
+  production: {
     username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,   
-    database:process.env.DB_DATABASE,
-    host: process.env.DB_PORT,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
     dialect: "postgres",
-define: {
-   timestamps: false
-}
+    define: {
+      timestamps: false
+    }
   },
-  "production": {
-    "username": "postgres",
-    "password": "password",
-    "database": "My_Local",
-    "host": "localhost",
-    "dialect": "postgres",
-"define": {
-   "timestamps": false
-}
-  }
 }
