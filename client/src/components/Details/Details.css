@@ -1,0 +1,13 @@
+.image {
+width: 350px;
+height: 350px;
+margin-left: 50px;
+}
+
+.carrusel {
+    margin-left: 350px;
+    width: 400px;
+    position: static;
+    
+}
+
