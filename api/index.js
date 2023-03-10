@@ -8,9 +8,12 @@ const PORT = process.env.PORT || 1998
 require('dotenv').config()
 
 
+
+
+
+app.use(cors());
 app.use(express.json());
-app.use('/', routers)
-app.use(cors())
+app.use('/', routers);
 
 
 
