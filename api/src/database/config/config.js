@@ -3,10 +3,10 @@ require('dotenv').config()
 module.exports = {
   development: {
     username: "postgres",
-    password: "password",
-    database:"My_Local" ,
-    host: "localhost",
-    port: "5432",
+    password: "qLpBOaZWBkcDpcJmtwqw",
+    database:"railway" ,
+    host: "containers-us-west-50.railway.app",
+    port: "7922",
     dialect: "postgres",
     define: {
       timestamps: false
