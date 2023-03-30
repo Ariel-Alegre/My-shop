@@ -6,7 +6,6 @@ module.exports = {
       id: {
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
         type: Sequelize.INTEGER
       },
       name: {
@@ -19,15 +18,16 @@ module.exports = {
       },
       email: {
         allowNull: false,
+        primaryKey: true,
         type: Sequelize.TEXT
       },
       password: {
         allowNull: false,
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
       },
       confirmPassword: {
         allowNull: false,
-        type: Sequelize.TEXT
+        type: Sequelize.STRING
       },
     });
   },
